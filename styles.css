@@ -1,0 +1,25 @@
+.jumbo{
+    padding: 3rem;
+    height: 500px;
+    display: flex;
+}
+.j-left{
+width: 40%;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 300px;
+    padding: 20px;
+}
+
+.card{
+    border: 1px solid red;
+    height: 200px;
+    width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+}
