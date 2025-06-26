@@ -6,6 +6,13 @@
     transition: all .6s ease;
     text-decoration: none;
 }
+/* temporary */
+img{
+    width: 50px;
+    height: 50px;
+}
+/* /temporary */
+
 :root {
     --white: #fff;
     --orange: #ff4533;
@@ -30,6 +37,10 @@ nav{
 }
 .logo{
     padding: 0 15px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
 }
 .menu ul li{
     display: inline-block;
@@ -59,10 +70,9 @@ nav{
     justify-content:space-between ;
     gap: 30px;
     color: var(--white);
-    background-image: url(Franklin_Clinton.webp);
+    background-image: url();
     background-size: cover;
     background-position: center center;
-
 }
 .banner h1{
     font-size: 50px;
@@ -93,4 +103,325 @@ nav{
     transform:  translateY(-6px);
     border:1px solid var(--white);
     background:transparent;
+}
+
+/* about section */
+.about-section{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--white);
+}
+.about-text h2{
+    font-family: bebas neue;
+    font-size: 70px;
+}
+.about-text h2 span{
+    color: var(--orange);
+}
+.about-text p{
+    line-height: 2;
+    margin:3% 0;
+}
+.about-text a{
+    background-color: var(--orange);
+    padding: 10px 30px;
+    color: var(--white);
+    display: inline-block;
+    border-radius: 50px;
+}
+
+/* skills */
+
+.section-header{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 80px;
+}
+.section-header h2{
+    font-size: 40px;
+    font-family: bebas neue;
+}
+.section-header h2 span{
+    color: #ff4533;
+}
+
+.skill-content{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--white);
+}
+.skill-content h2{
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.d-box{
+    width:500px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.d{
+    height: 100%;
+    background-color: var(--orange);
+}
+/* quote  */
+.quote-area{
+    background: var(--orange);
+    color:var(--white)
+}
+.q-content{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.7;
+}
+/* services */
+.services-content{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--white);
+}
+.single-service{
+    text-align: center;
+    padding: 25px;
+}
+.icon-area{
+    width: 80px;
+    height: 80px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 30px;
+    line-height: 99px;
+}
+.icon-area i{
+    font-size: 35px;
+}
+.single-service p{
+    line-height: 2;
+    margin: 30px 0;
+}
+.single-service a{
+    background:var(--orange);
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: var(--white);
+    display: inline-block;
+}
+.single-service:hover{
+    background: var(--orange);
+    color: var(--black);
+    border-radius: 25px;
+}
+.single-service:hover:hover .icon-area{
+    background: var(--white);
+}
+.single-service:hover .icon-area i{
+    color: var(--black);
+}
+.single-service:hover a{
+    background: var(--white);
+    color: var(--black);
+}
+
+/* contacts */
+.contact-content{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: var(--white);
+}
+
+.single-contact{
+    box-shadow: 0 2px 20px rgba(0,0, 0, 0.5);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 800px;
+}
+.single-contact label{
+    margin: 25px 0;
+}
+.single-contact input{
+    background: #262626;
+    border: none;
+    color: var(--white);
+    padding: 15px;
+}
+.single-contact a{
+    display: inline-block;
+    background: var(--orange);
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--white);
+    font-weight: 900;
+}
+
+/* footer */
+
+footer{
+    color: var(--white);
+}
+.socials{
+    margin-top: 30px;
+}
+
+#rights{
+    margin: 0 15px;
+}
+.socials i{
+    font-size: 25px;
+    margin: 0 15px;
+}
+.socials i:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+#scrollToTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+#scrollToTopBtn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* responsive design */
+@media (max-width:1000px){
+    .header{
+        height: auto;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex;
+    }
+    .menu ul{
+        padding: 0;
+    }
+    .menu ul li{
+        margin: 0 15px 0 0;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-image: none;
+        height: auto;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    .banner p{
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .b-text{
+        margin-top: 50px;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-section{
+        flex-direction: column;
+        padding: 0 2%;
+        text-align: center;
+    }
+    .skill-content{
+        padding: 0 2%;
+        flex-direction: column;
+    }
+    .services-content{
+        padding: 0 2%;
+        flex-direction: column;
+    }
+}
+@media (max-width:600px){
+    .logo{
+        margin-top: 0;
+    }
+    nav{
+        padding: 15px;
+    }
+    .menu ul li a{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .banner{
+        text-align: center;
+        background-image: none;
+    }
+    .banner h1{
+        font-size: 18px;
+    }
+    .banner p{
+        margin: 15px 0;
+        font-size: 11px;
+    }
+    .banner button{
+        font-size: 12px;
+    }
+    .b-text{
+        margin-top: 30px;
+    }
+    .about.section-padding{
+        padding: 0;
+        margin-top: 0;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-section{
+        flex-direction: column;
+        padding: 0 2%;
+    }
+    .about-text h2{
+        font-size: 38px;
+    }
+    .skill-content{
+        padding: 0 2%;
+        flex-direction: column;
+    }
+    .d-box{
+        width: 280px;
+    }
+    .q-content p{
+        font-size: 20px;
+    }
+    .services-content{
+        padding: 0 2%;
+        flex-direction: column;
+    }
+    .single-contact{
+        padding: 25px;
+        width: 100%;
+    }
+    footer.section-padding{
+        padding: 50px 0;
+    }
 }
